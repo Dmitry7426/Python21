@@ -10,5 +10,3 @@ ostKopeek = sumKopeek % 100
 
 
 print('Для покупки ' + str(N) + ' пирожков потребуется ' + str(sumRub) + ' рублей и ' + str(ostKopeek) + ' копеек!')
-
-
