@@ -1,3 +1,1 @@
-int[input()]
 
-test
