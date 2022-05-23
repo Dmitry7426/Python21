@@ -3,7 +3,7 @@
 
 x1, y1, x, y = int(input('')), int(input('')), int(input('')), int(input(''))
 
-if
+if abs(x1 - x) == abs(y1 - y):
     print('YES')
 else:
     print('NO')

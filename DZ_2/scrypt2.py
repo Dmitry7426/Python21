@@ -2,7 +2,7 @@
 # определите, может ли ладья попасть с первой клетки на вторую одним ходом.
 
 x1, y1, x, y = int(input('')), int(input('')), int(input('')), int(input(''))
-
+if x1 == x or y1 == y:
     print('YES')
 else:
     print('NO')
