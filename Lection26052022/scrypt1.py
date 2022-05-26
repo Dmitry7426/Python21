@@ -48,7 +48,7 @@ first = 0
 second = 0
 found = False
 for i in range(len(a)):
-    for j in range(len(a)):
+    for j in range(i + 1, len(a)):
         if a[i] + a[j] == int(target):
             first = a[i]
             second = a[j]
@@ -60,6 +60,6 @@ for i in range(len(a)):
 # else:
 #     print('чисел нет')
 
-        
+
 
 
