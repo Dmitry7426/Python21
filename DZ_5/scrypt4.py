@@ -3,12 +3,28 @@
 # Вывести среднее арифметическое. В случае нескольких вариантов ответа вывести минимальное
 # из найденных средних арифметических значений, ближайших к x.
 
+x = float(input('Введите число x:  '))
 n = int(input('Введите число n:  '))
 a = [int(x) for x in input().split()]
-b = [int(x) for x in input().split()]
+a1 = 0
+a2 = 0
+q = []
 e = []
-for i in range(0, n):
-    if a[i] != b[i]:
-        e.append(a[i])
+d = []
+# i = 1
+for i in range(0, n - 1):
+    for j in range(1, n):
+        if a[i] != a[j]:
+            a1 = abs((a[i] + a[j]) / 2)
+            e.append(a1)
+            a2 = abs(a1 - x)
+            q.append(a2)
+            d.append(a1 + a2)
+for i in range(0, n - 1):
+    if d[i] == x:
+        print(d[i])
 print(e)
+print(q)
+print(d)
+
 
