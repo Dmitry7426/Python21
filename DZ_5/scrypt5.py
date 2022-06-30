@@ -10,7 +10,7 @@ for i in a:
         if i == j:
             s += 1
     q.append(s)
-max_coin= max(q)
+max_coin = max(q)
 print(max_coin)
 
 
